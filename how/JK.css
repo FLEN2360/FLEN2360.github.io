@@ -1,0 +1,22 @@
+.row div
+{
+    border: 1px solid;
+    font-size: 20px;
+}
+
+.container-lg {
+    min-width: 100%;
+}
+body {
+    background-color: aqua;
+}
+
+@media screen and (max-width: 708px){
+ body {
+   background-color: rgb(131, 199, 42); 
+ }
+}
+#FL 
+{
+    font-size: 30px;
+}
