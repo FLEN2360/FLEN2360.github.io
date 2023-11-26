@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./../js/javaScriptMB.js"></script>
+    <link rel="stylesheet" href="../css/personal_website.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark  " id="title">
+        <a href="#" class="navbar-brand" id="title0">FLEN的網站</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li><a class="title1 nav-link" href="./../index.html">首頁</a></li>
+                <li><a class="title1 nav-link" href="https://www.pu.edu.tw/">靜宜大學</a></li>
+                <li><a class="title1 nav-link" href="html/curriculum.html">我的課表</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid p-4 bg-warning text-primary text-center">
+        <h1>發文</h1>
+    </div>
+    <table class="table flex-fill ">
+        <thead class="text-center">
+            <tr>
+                <th class="border border-dark border border-3 bg-info">
+                    <h1 class="display-5 p-3 ">名稱</h1>
+                </th>
+                <th class="border border-dark border border-3">
+                    <textarea style="resize:none;" id="MBname" cols="200" rows="5" placeholder="請輸入留言者名稱"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th class="border border-dark border border-3 bg-info">
+                    <h1 class=" display-5 p-3" scope="col">標題</h1>
+                </th>
+                <th class="border border-dark border border-3">
+                    <textarea style="resize:none;" scope="col" id="MBtitle" cols="200" rows="5" type="text"
+                        placeholder="請輸入標題"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th class="border border-dark border border-3 bg-info">
+                    <h1 class="display-5 p-3 ">內容</h1>
+                </th>
+                <th class="border border-dark border border-3">
+                    <textarea style="resize:none;" id="MBtextarea" cols="200" rows="5" placeholder="請輸入內容"></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button id="btnClear" class="btn btn-danger">清除</button>
+                </th>
+                <th>
+                    <button id="btnGet" class="btn btn-primary">送出</button>
+                </th>
+            </tr>
+        </thead>
+    </table>
+    <div class="container-fluid p-4 bg-warning text-primary text-center ">
+        <h1>留言版</h1>
+        <button class="btn btn-danger btn-sm d-flex-center" id="deleteMessage">一鍵刪除內容</button>
+    </div>
+    <div id="massageboard">
+
+    </div>
+
+
+
+
+</body>
+
+
+</html>
