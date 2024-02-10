@@ -110,3 +110,13 @@ function judge() {
                 </div>`
     }
 }
+var nameMB, titleMB, textAreaMB;
+$(document).ready(function () {
+    $("#buttonMB").click(function () {
+        nameMB = $("#nameMB").val();
+        titleMB = $("#titleMB").val();
+        textAreaMB = $("#textAreaMB").val();
+
+
+    });
+});
